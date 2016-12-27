@@ -1,40 +1,57 @@
 <!DOCTYPE HTML>
 <html>
 
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-    </script>
-</head>
-
 <body>
     <script>
-        console.log("HELLO");
-        var width = $(window).width() / 3;
-        var height = $(window).height() / 3;
-        var x = Math.floor((Math.random() * 255) + 1)
+        console.log("starts");
 
-        function Jesus(left, top, width, height, i, k) {
-            var div = document.createElement("div");
-            div.style.width = width + "px"; //(width / 3).toString();
-            div.style.height = height + "px"; //(height / 3).toString();
-            div.style.top = top + "px";
-            div.style.left = left + "px";
-            div.style.background = "rgb(" + Math.floor((Math.random() * 255) + 1) + ",200, 90)";
-            div.style.color = "white";
-            div.innerHTML = "position i =" + i + " j = " + j;
-            div.style.position = "absolute";
-            document.body.appendChild(div);
-        }
-        var i;
-        var j;
-        for(i=0;i < 3; i++){
-          for(j=0;j < 3; j++){
-            Jesus(width*i, height*j, width, height, i, j);
-            console.log("i = " + i + " j = " + j);
-          }
-        }
-        console.log("bye");
+        function XsAndOs() {
+            this.board = [
+                ['E', 'E', 'E'],
+                ['E', 'E', 'E'],
+                ['E', 'E', 'E']
+            ];
+            this.turn = "unknown";
+            this.state = "unknown";
+            this.moves = [];
+            this.future_moves = [];
+            this.turn_number = 1
+            this.print_board = function() {
+                for (var i = 0; i < 3; i++) {
+                    console.log(this.board[0][0], this.board[0][1], this.board[0][2])
+                }
+            }
+            this.decide_who_goes_first = function() {
+                if ((Math.floor((Math.random() * 2) + 1)) == 1) {
+                    this.turn = "X";
+                } else {
+                    this.turn = "O";
+                }
+                this.state = "play"
+            }
+            this.check_winner= function(){
+              for (var i in ["X", "O"]){
 
+              }
+            }
+            this.check_cats= function(){
+              var count = 0;
+            }
+            this.do_turn = function(){
+              if(this.state == "play"){
+                
+              }
+            }
+
+        }
+
+
+
+
+        var game = new XsAndOs();
+        game.decide_who_goes_first();
+        console.log(game.turn);
+        console.log("WORKS");
     </script>
     <h1>hello</h1>
 </body>

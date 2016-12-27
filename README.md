@@ -1,20 +1,48 @@
 # JavascriptXandOs
+The goal is to play X's and O's in javascript with a nice UI and extra features
+
 First plan of action
-1. write XandOs on the command line
-  get the old code I wrote in python
-  improve the code I wrote in python in some way shape or form
-    track all moves in a game
-    track all games with JSON
-    undo / redo
-    print data from past games
-  rewrite the code I wrote on python in javascript
-2. Create the divs with ID
-  remember I will need to relate the div ID's to a data structure
-  figure out how to add stuff to the body of HTML
-  figure out how to create a div
-  make a function to create divs
-    make sure to give the divs an ID
-  make a function to add a div to the body
-3. User input
-  come up with a way for a user to interact with a game using the different input methods javascript provides
-  click on the grid boxes to place you x or o
+-  rewrite the code I wrote on python in javascript, use alert for user input
+    https://github.com/mullinat/PythonicXsAndOs/
+-  check that my LearningCanvas API has everything I need
+    list all the requirements LearningCanvas must be able to do
+    https://github.com/mullinat/LearningCanvas
+
+
+
+
+Design
+Situation Brainstorming
+  I want to be able to play X's and O's using javascript
+  I want everything to be done with a mouse
+Requirements
+  display information to the user
+  be able to click on specific locations
+  be able to specifically control the look of the page
+  be able to update the information being displayed very specifically
+System Flow
+  start a new game
+  tell players to choose a piece
+  players click that they have chosen a piece
+  computer tells who goes first
+  person clicks place
+  second person clicks place
+  play until someone wins
+  display winner or cats game
+
+
+
+
+Ideation
+  Canvas or HTML or a library
+  How do I click on specific areas of the screen
+Decisions
+  research Canvas
+  looks like canvas will do the trick
+Learn how to draw using Canvas
+  http://www.html5canvastutorials.com/
+  http://www.w3schools.com/html/html5_canvas.asp
+  https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+Learn how to click using canvas
+  http://javascript.info/tutorial/mouse-events
+  http://www.html5canvastutorials.com/advanced/html5-canvas-mouse-coordinates/
