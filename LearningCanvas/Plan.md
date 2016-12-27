@@ -3,5 +3,8 @@ Be able to draw line
   width
   cap
 Be able to draw a circle / ellipse
+  line color
+  width
+  fill color
 Be able to display text
 Be able to update everything
