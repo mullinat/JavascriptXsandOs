@@ -7,4 +7,10 @@ Be able to draw a circle / ellipse
   width
   fill color
 Be able to display text
+  display text
+  specific location
+  color
+  font
+  size
+  align
 Be able to update everything
