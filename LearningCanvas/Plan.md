@@ -14,3 +14,6 @@ Be able to display text
   size
   align
 Be able to update everything
+  background color
+Write functions that are clickable and draw click boxes around themselves
+Create a click box that changes the background color
